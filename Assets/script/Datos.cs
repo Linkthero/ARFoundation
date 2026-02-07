@@ -5,8 +5,12 @@ public class Datos : MonoBehaviour
 {
     public static Datos instance;
 
-    [SerializeField] private TextMeshProUGUI txtVidas;
-    [SerializeField] private TextMeshProUGUI txtPuntos;
+    [SerializeField] public TextMeshProUGUI txtVidas;
+    [SerializeField] public TextMeshProUGUI txtPuntos;
+
+    [SerializeField] public GameObject panelTutorial;
+
+    public float cronometro;
 
 
     public int MaxVidas = 3;
@@ -19,21 +23,48 @@ public class Datos : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+            Debug.Log("miau awake");
         }
         else
         {
             Destroy(gameObject);
+            Datos.instance.cronometro = 0;
+            Datos.instance.txtVidas = GameObject.Find("txtVidas").GetComponent<TextMeshProUGUI>();
+            Datos.instance.txtPuntos = GameObject.Find("txtPuntos").GetComponent<TextMeshProUGUI>();
+            Datos.instance.panelTutorial = GameObject.Find("PanelTutorial");
+            
+            //Debug.Log("miau awake destroy");
         }
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        
         vidasActuales = MaxVidas;
         puntos = 0;
 
+        //Debug.Log("miau start");
         txtPuntos.text = puntos.ToString();
         txtVidas.text = vidasActuales.ToString();
+    }
+
+    private void Update()
+    {
+        if(cronometro < 6)
+        {
+            cronometro += 1 * Time.deltaTime;
+        } else
+        {
+            panelTutorial.SetActive(false);
+        }
+        
+    }
+
+    public void empiezaJuego()
+    {
+        panelTutorial.SetActive(false);
+        Time.timeScale = 1f;
     }
 
     public int GetVidas()
@@ -56,6 +87,12 @@ public class Datos : MonoBehaviour
     {
         puntos++;
         txtPuntos.text = puntos.ToString();
+    }
+
+    public void AumentaVida()
+    {
+        vidasActuales++;
+        txtVidas.text = vidasActuales.ToString();
     }
 
     public void ReiniciarDatos()

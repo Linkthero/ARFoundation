@@ -76,6 +76,14 @@ namespace Benjathemaker
         {
             return t < 0.5f ? 2 * t * t : 1 - Mathf.Pow(-2 * t + 2, 2) / 2;
         }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if(other.CompareTag("Enemy"))
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }
 

@@ -15,6 +15,15 @@ public class FaceJumpController : MonoBehaviour
     private bool isGrounded = true;
     private float lastJumpTime;
 
+    [Header("Sonidos")]
+    private AudioSource audioSource;
+    [SerializeField] AudioClip sonidoSalto;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -31,6 +40,7 @@ public class FaceJumpController : MonoBehaviour
 
         void Jump()
         {
+            audioSource.PlayOneShot(sonidoSalto);
             //UIManager.Instance.MostrarMensaje("Jump");
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0, rb.linearVelocity.z);
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
