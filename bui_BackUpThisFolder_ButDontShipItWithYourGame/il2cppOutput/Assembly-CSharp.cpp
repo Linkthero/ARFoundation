@@ -177,6 +177,7 @@ IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B35
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____6DFDB0013A2D67B4972E06C5A8BE7CEFBA68895D184973FF334BDC85220386FC_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____A9567CF7CEA5D4CEF511DAD2A52126B772F1664EBDBD2C3560F1F3AEA769A86D_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral3260331AF5DA53ABC7CA7BAF659CF8D9FC93DEC7;
+IL2CPP_EXTERN_C String_t* _stringLiteral52698506969D385D9FD3349E0993E4F69F83EFEA;
 IL2CPP_EXTERN_C String_t* _stringLiteral54BCA388B1C4035019F447FBBE662C6BFC12F7E8;
 IL2CPP_EXTERN_C String_t* _stringLiteral62907C9B304A46D6D37CA1CB6B1124F9D1E8D2D3;
 IL2CPP_EXTERN_C String_t* _stringLiteral6E73F446885394A87F1FA002B830D2B6D6F24683;
@@ -190,7 +191,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralA982A1BA4D18DFE3E66F126342126192B22DB764
 IL2CPP_EXTERN_C String_t* _stringLiteralC7C406BAA55D4AFAFA463E8005BFD913570C0077;
 IL2CPP_EXTERN_C String_t* _stringLiteralCAF8804297181FF007CA835529DD4477CFD94A70;
 IL2CPP_EXTERN_C String_t* _stringLiteralD07C9EFFF77E58C55D7D9389F91FCA15B35744D0;
-IL2CPP_EXTERN_C String_t* _stringLiteralD2EBD9324FF1A6689C78155A904BB50DC9503584;
 IL2CPP_EXTERN_C String_t* _stringLiteralF8F992FCAD976BC7BDB140822E45B8B8A7CF8EA8;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_m1C9FCB4BBE56BEC6BDEF6E4BA1E5DFF91614D7CE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m42DA4DEA19EB60D80CBED7413ADEB27FA033C77B_RuntimeMethod_var;
@@ -2679,10 +2679,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Datos_Awake_m06C11EF9B75CCCEAED8307AAFB8
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_mBDBF977A8C7734F6EDD83FC65C6FDDE74427611E_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral52698506969D385D9FD3349E0993E4F69F83EFEA);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral62907C9B304A46D6D37CA1CB6B1124F9D1E8D2D3);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7A6506EA7F42F0B3467BBADFB827A1D4DD66BB92);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC7C406BAA55D4AFAFA463E8005BFD913570C0077);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD2EBD9324FF1A6689C78155A904BB50DC9503584);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -2745,7 +2745,7 @@ IL_0029:
 		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/Datos.cs:34>
 		Datos_t367082BD4E5487713B17B8215A77DB35FBBB2A92* L_11 = ((Datos_t367082BD4E5487713B17B8215A77DB35FBBB2A92_StaticFields*)il2cpp_codegen_static_fields_for(Datos_t367082BD4E5487713B17B8215A77DB35FBBB2A92_il2cpp_TypeInfo_var))->___instance;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12;
-		L_12 = GameObject_Find_m7A669B4EEC2617AB82F6E3FF007CDCD9F21DB300(_stringLiteralD2EBD9324FF1A6689C78155A904BB50DC9503584, NULL);
+		L_12 = GameObject_Find_m7A669B4EEC2617AB82F6E3FF007CDCD9F21DB300(_stringLiteral52698506969D385D9FD3349E0993E4F69F83EFEA, NULL);
 		NullCheck(L_11);
 		L_11->___panelTutorial = L_12;
 		Il2CppCodeGenWriteBarrier((void**)(&L_11->___panelTutorial), (void*)L_12);
@@ -4454,7 +4454,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackSpawner_SpawnPiece_mE510DF9EF6FD8EB
 		float L_7 = L_6->___cronometro;
 		if ((!(((float)L_7) >= ((float)(5.0f)))))
 		{
-			goto IL_0092;
+			goto IL_0096;
 		}
 	}
 	{
@@ -4465,63 +4465,64 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackSpawner_SpawnPiece_mE510DF9EF6FD8EB
 		L_9 = Queue_1_get_Count_m63EB352CDC9F12E3141775BB74938A69685DE1D7_inline(L_8, Queue_1_get_Count_m63EB352CDC9F12E3141775BB74938A69685DE1D7_RuntimeMethod_var);
 		if ((((int32_t)L_9) <= ((int32_t)3)))
 		{
-			goto IL_0092;
+			goto IL_0096;
 		}
 	}
 	{
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:60>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:62>
 		float L_10;
 		L_10 = Random_get_value_m2CEA87FADF5222EF9E13D32695F15E2BA282E24B(NULL);
-		V_1 = L_10;
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:62>
-		float L_11 = V_1;
-		float L_12 = __this->___obstacleChance;
-		if ((!(((float)L_11) < ((float)L_12))))
+		float L_11 = __this->___obstacleChance;
+		if ((!(((float)L_10) < ((float)L_11))))
 		{
-			goto IL_0066;
+			goto IL_0064;
 		}
 	}
 	{
 		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:64>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = V_0;
-		NullCheck(L_13);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14;
-		L_14 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_13, NULL);
-		TrackSpawner_SpawnObstacle_m64644BB87FFA8B4B419A80D49FCA5A74A29CA0F0(__this, L_14, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = V_0;
+		NullCheck(L_12);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13;
+		L_13 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_12, NULL);
+		TrackSpawner_SpawnObstacle_m64644BB87FFA8B4B419A80D49FCA5A74A29CA0F0(__this, L_13, NULL);
 	}
 
-IL_0066:
+IL_0064:
 	{
 		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:67>
+		float L_14;
+		L_14 = Random_get_value_m2CEA87FADF5222EF9E13D32695F15E2BA282E24B(NULL);
+		V_1 = L_14;
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:68>
 		float L_15 = V_1;
 		float L_16 = __this->___vidaChance;
 		if ((!(((float)L_15) <= ((float)L_16))))
 		{
-			goto IL_007d;
+			goto IL_0081;
 		}
 	}
 	{
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:69>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:70>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = V_0;
 		NullCheck(L_17);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18;
 		L_18 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_17, NULL);
 		TrackSpawner_SpawnVida_m5AD1AAB2227BCF2EB01C1B33877766DF210B44D9(__this, L_18, NULL);
-		goto IL_0092;
+		goto IL_0096;
 	}
 
-IL_007d:
+IL_0081:
 	{
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:71>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:72>
 		float L_19 = V_1;
 		float L_20 = __this->___coinChance;
 		if ((!(((float)L_19) < ((float)L_20))))
 		{
-			goto IL_0092;
+			goto IL_0096;
 		}
 	}
 	{
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:73>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:74>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21 = V_0;
 		NullCheck(L_21);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22;
@@ -4529,33 +4530,33 @@ IL_007d:
 		TrackSpawner_SpawnCoin_mEC067560DA60011E8421553ABCD627956C2083C7(__this, L_22, NULL);
 	}
 
-IL_0092:
+IL_0096:
 	{
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:82>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:83>
 		float L_23 = __this->___spawnZ;
 		int32_t L_24 = __this->___initialPieces;
 		float L_25 = __this->___pieceLength;
 		float L_26 = __this->___pieceLength;
 		if ((!(((float)L_23) < ((float)((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_multiply(((float)L_24), L_25)), L_26))))))
 		{
-			goto IL_00c2;
+			goto IL_00c6;
 		}
 	}
 	{
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:84>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:85>
 		float L_27 = __this->___spawnZ;
 		float L_28 = __this->___pieceLength;
 		__this->___spawnZ = ((float)il2cpp_codegen_add(L_27, L_28));
 	}
 
-IL_00c2:
+IL_00c6:
 	{
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:87>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:88>
 		Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4* L_29 = __this->___trackQueue;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_30 = V_0;
 		NullCheck(L_29);
 		Queue_1_Enqueue_m5A435FDDADE10BC9599E175F9B600C40ECFE3C1B(L_29, L_30, Queue_1_Enqueue_m5A435FDDADE10BC9599E175F9B600C40ECFE3C1B_RuntimeMethod_var);
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:89>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:90>
 		return;
 	}
 }
@@ -4573,7 +4574,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackSpawner_SpawnObstacle_m64644BB87FFA
 	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* V_0 = NULL;
 	float V_1 = 0.0f;
 	{
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:93>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:94>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_0 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)3);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = L_0;
 		NullCheck(L_1);
@@ -4582,7 +4583,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackSpawner_SpawnObstacle_m64644BB87FFA
 		NullCheck(L_2);
 		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(2), (float)(0.25f));
 		V_0 = L_2;
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:94>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:95>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = V_0;
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_4 = V_0;
 		NullCheck(L_4);
@@ -4592,12 +4593,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackSpawner_SpawnObstacle_m64644BB87FFA
 		int32_t L_6 = L_5;
 		float L_7 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = L_7;
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:96>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:97>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = __this->___obstaclePrefab;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9;
 		L_9 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3(L_8, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3_RuntimeMethod_var);
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:97>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:98>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = L_9;
 		NullCheck(L_10);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11;
@@ -4605,7 +4606,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackSpawner_SpawnObstacle_m64644BB87FFA
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12 = ___0_parent;
 		NullCheck(L_11);
 		Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250(L_11, L_12, NULL);
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:98>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:99>
 		NullCheck(L_10);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13;
 		L_13 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_10, NULL);
@@ -4615,7 +4616,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackSpawner_SpawnObstacle_m64644BB87FFA
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_15), L_14, (3.29999995f), (0.0f), NULL);
 		NullCheck(L_13);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_13, L_15, NULL);
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:99>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:100>
 		return;
 	}
 }
@@ -4633,7 +4634,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackSpawner_SpawnCoin_mEC067560DA60011E
 	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* V_0 = NULL;
 	float V_1 = 0.0f;
 	{
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:103>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:104>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_0 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)3);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = L_0;
 		NullCheck(L_1);
@@ -4642,7 +4643,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackSpawner_SpawnCoin_mEC067560DA60011E
 		NullCheck(L_2);
 		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(2), (float)(0.25f));
 		V_0 = L_2;
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:104>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:105>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = V_0;
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_4 = V_0;
 		NullCheck(L_4);
@@ -4652,12 +4653,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackSpawner_SpawnCoin_mEC067560DA60011E
 		int32_t L_6 = L_5;
 		float L_7 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = L_7;
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:106>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:107>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = __this->___CoinPrefab;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9;
 		L_9 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3(L_8, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3_RuntimeMethod_var);
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:107>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:108>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = L_9;
 		NullCheck(L_10);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11;
@@ -4665,7 +4666,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackSpawner_SpawnCoin_mEC067560DA60011E
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12 = ___0_parent;
 		NullCheck(L_11);
 		Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250(L_11, L_12, NULL);
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:108>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:109>
 		NullCheck(L_10);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13;
 		L_13 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_10, NULL);
@@ -4675,7 +4676,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackSpawner_SpawnCoin_mEC067560DA60011E
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_15), L_14, (3.29999995f), (0.0f), NULL);
 		NullCheck(L_13);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_13, L_15, NULL);
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:110>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:111>
 		return;
 	}
 }
@@ -4693,7 +4694,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackSpawner_SpawnVida_m5AD1AAB2227BCF2E
 	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* V_0 = NULL;
 	float V_1 = 0.0f;
 	{
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:114>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:115>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_0 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)3);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = L_0;
 		NullCheck(L_1);
@@ -4702,7 +4703,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackSpawner_SpawnVida_m5AD1AAB2227BCF2E
 		NullCheck(L_2);
 		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(2), (float)(0.25f));
 		V_0 = L_2;
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:115>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:116>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = V_0;
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_4 = V_0;
 		NullCheck(L_4);
@@ -4712,12 +4713,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackSpawner_SpawnVida_m5AD1AAB2227BCF2E
 		int32_t L_6 = L_5;
 		float L_7 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_1 = L_7;
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:117>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:118>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = __this->___vidaPrefab;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9;
 		L_9 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3(L_8, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3_RuntimeMethod_var);
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:118>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:119>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = L_9;
 		NullCheck(L_10);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11;
@@ -4725,7 +4726,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackSpawner_SpawnVida_m5AD1AAB2227BCF2E
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12 = ___0_parent;
 		NullCheck(L_11);
 		Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250(L_11, L_12, NULL);
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:119>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:120>
 		NullCheck(L_10);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13;
 		L_13 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_10, NULL);
@@ -4735,7 +4736,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackSpawner_SpawnVida_m5AD1AAB2227BCF2E
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_15), L_14, (3.29999995f), (0.0f), NULL);
 		NullCheck(L_13);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_13, L_15, NULL);
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:121>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:122>
 		return;
 	}
 }
@@ -4750,15 +4751,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackSpawner_RemovePiece_m3B241708BE5567
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:125>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:126>
 		Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4* L_0 = __this->___trackQueue;
 		NullCheck(L_0);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
 		L_1 = Queue_1_Dequeue_m11F75D84C5BAC39C7B433215A25DFC2818603B24(L_0, Queue_1_Dequeue_m11F75D84C5BAC39C7B433215A25DFC2818603B24_RuntimeMethod_var);
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:126>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:127>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_1, NULL);
-		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:127>
+		//<source_info:C:/Users/Adri/Documents/GitHub/ARFoundation/Assets/script/TrackSpawner.cs:128>
 		return;
 	}
 }

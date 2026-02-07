@@ -153,7 +153,7 @@ MonoBehaviour:
   CoinPrefab: {fileID: 1204040150048104058, guid: 3ffb0c60a30630c45a7fdbbe9630ea73, type: 3}
   vidaPrefab: {fileID: 4871796190280904008, guid: 5fac7c317ec542a4e81825c0220462bc, type: 3}
   initialPieces: 5
-  pieceLength: 2
+  pieceLength: 1.95
   speed: 2
   obstacleChance: 0.4
   coinChance: 0.5
